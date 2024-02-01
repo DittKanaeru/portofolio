@@ -1,332 +1,332 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="HI im Ditt">
-        <meta name="author" content="Ditty">
-        <title>Ditty homepage</title>
-        <!-- font icons -->
-        <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-        <!-- Bootstrap + dixy main styles -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="HI im Ditt">
+    <meta name="author" content="Ditty">
+    <title>Ditty homepage</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + dixy main styles -->
 
+
+    <link rel="stylesheet" href="assets/css/dixy.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Ditty</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Flexing</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#testmonial">Review</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#blog">Blog</a>
+                </li>
+                <li class="item ml-md-3">
+                    <a href="wa.me/6285950723074" class="btn btn-primary">Chat me</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">Hello!</span>
+                <span class="down">I am Ditty</span>
+            </h1>
+            <p class="header-subtitle">just some human</p>            
+
+            <!-- Tambahkan fitur pemutaran dan penghentian lagu -->
+            <button id="playButton" class="btn btn-primary" onclick="toggleAudio()">
+                <span class="play-icon">▶</span> Play songs
+            </button>
+            <audio id="myAudio" src="https://bucin-livid.vercel.app/audio/lopyou.mp3"></audio>
+        </header>
     
-        <link rel="stylesheet" href="assets/css/dixy.css">
-    </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    
-        <!-- Page Navbar -->
-        <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-            <div class="container">
-                <a class="logo" href="#">Ditty</a>         
-                <ul class="nav">
-                    <li class="item">
-                        <a class="link" href="#home">Home</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="#about">About</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="#portfolio">Flexing</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="#testmonial">Review</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="#blog">Blog</a>
-                    </li>
-                    <li class="item ml-md-3">
-                        <a href="wa.me/6285950723074" class="btn btn-primary">Chat me</a>
-                    </li>
-                </ul>
-                <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                    <div class="hamburger-box">
-                      <div class="hamburger-inner"></div>
-                    </div>
-                </a>
-            </div>          
-        </nav><!-- End of Page Navbar -->
+<!-- about section -->
+<section class="section pt-0" id="about">
+    <!-- container -->
+    <div class="container text-center">
+        <!-- about wrapper -->
+        <div class="about">
+            <div class="about-img-holder">
+                <img src="assets/imgs/mee.png" class="about-img" >
+            </div>
+            <div class="about-caption">
+                <p class="section-subtitle">Who Am I ?</p>
+                <h2 class="section-title mb-3">About Me</h2>
+                <p>
+                    Hai aku adit atau juga kadang di sebut aidit cuma seorang mahasiswa normal kok
+                    <br>oh iya selamat datang ya di aku kalo kalian punya pertanyaan bisa langsung chat aku aja atau kalo mau liat sosmed ku bisa langsung ke bawah aja yaaa 
+                    <br>(im only have 1 instagram account).         
+                </p>
+                <button class="btn-rounded btn btn-outline-primary mt-4"><a href="https://www.instagram.com/dittyyy_8/">IG</a></button>
+                <button class="btn-rounded btn btn-outline-primary mt-4"><a href="https://ditty.ditty.repl.co">Watch</a></button>
+            </div>              
+        </div><!-- end of about wrapper -->
+    </div><!-- end of container -->
+</section> <!-- end of about section -->
 
-        <!-- page header -->
-        <header id="home" class="header">
-            <div class="overlay"></div>
-            <div class="header-content container">
-                <h1 class="header-title">
-                    <span class="up">Hello!</span>
-                    <span class="down">I am Ditty</span>
-                </h1>
-                <p class="header-subtitle">just some human</p>            
-    
-                <!-- Tambahkan fitur pemutaran dan penghentian lagu -->
-                <button id="playButton" class="btn btn-primary" onclick="toggleAudio()">
-                    <span class="play-icon">▶</span> Play songs
-                </button>
-                <audio id="myAudio" src="https://bucin-livid.vercel.app/audio/lopyou.mp3"></audio>
-            </header>
-        
-    <!-- about section -->
-    <section class="section pt-0" id="about">
-        <!-- container -->
-        <div class="container text-center">
-            <!-- about wrapper -->
-            <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/mee.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, dixy Landing page">
+<!-- service section -->
+<section class="section" id="service">
+    <div class="container text-center">
+        <p class="section-subtitle">apa aja sih yg bisa aku lakuin?/skill apa aja sih yg aku punya?</p>
+        <h6 class="section-title mb-6">berikut di bawah ini</h6>
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="assets/imgs/pencil-case.svg"  class="icon">
+                        <h6 class="title">Ngoding</h6>
+                        <p class="subtitle">Ga terlalu suka ngoding sih cuma seru aja gitu nonton dokumentasi atau tutorial ngoding,yaa walau ga akan di lakuin hehe.</p>
+                    </div>
                 </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        Hai aku adit atau juga kadang di sebut aidit cuma seorang mahasiswa normal kok
-                        <br>oh iya selamat datang ya di aku kalo kalian punya pertanyaan bisa langsung chat aku aja atau kalo mau liat sosmed ku bisa langsung ke bawah aja yaaa 
-                        <br>(im only have 1 instagram account).         
-                    </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4"><a href="https://www.instagram.com/dittyyy_8/">IG</a></button>
-                    <button class="btn-rounded btn btn-outline-primary mt-4"><a href="https://ditty.ditty.repl.co">Watch</a></button>
-                </div>              
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
-    </section> <!-- end of about section -->
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="assets/imgs/responsive.svg"  class="icon">
+                        <h6 class="title">Eksplor hal baru</h6>
+                        <p class="subtitle">aku itu selalu suka hal baru entah itu penting atau tidak.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="assets/imgs/toolbox.svg"  class="icon">
+                        <h6 class="title">Sekolah</h6>
+                        <p class="subtitle">Sekolah untuk orang bodoh. maka dari itu aku Sekolah</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="assets/imgs/analytics.svg"  class="icon">
+                        <h6 class="title">Design</h6>
+                        <p class="subtitle">terkadang aku juga sering ngedit ntah itu poster,GFX,logo,atau bahkan JJ.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end of row -->
+    </div>
+</section><!-- end of service section -->
 
-    <!-- service section -->
-    <section class="section" id="service">
-        <div class="container text-center">
-            <p class="section-subtitle">apa aja sih yg bisa aku lakuin?/skill apa aja sih yg aku punya?</p>
-            <h6 class="section-title mb-6">berikut di bawah ini</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/pencil-case.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, dixy Landing page" class="icon">
-                            <h6 class="title">Ngoding</h6>
-                            <p class="subtitle">Ga terlalu suka ngoding sih cuma seru aja gitu nonton dokumentasi atau tutorial ngoding,yaa walau ga akan di lakuin hehe.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/responsive.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, dixy Landing page" class="icon">
-                            <h6 class="title">Eksplor hal baru</h6>
-                            <p class="subtitle">aku itu selalu suka hal baru entah itu penting atau tidak.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/toolbox.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, dixy Landing page" class="icon">
-                            <h6 class="title">Sekolah</h6>
-                            <p class="subtitle">Sekolah untuk orang bodoh. maka dari itu aku Sekolah</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/analytics.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, dixy Landing page" class="icon">
-                            <h6 class="title">Design</h6>
-                            <p class="subtitle">terkadang aku juga sering ngedit ntah itu poster,GFX,logo,atau bahkan JJ.</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end of row -->
-        </div>
-    </section><!-- end of service section -->
-
-    <!-- portfolio section -->
-    <section class="section" id="portfolio">
-        <div class="container text-center">
-            <p class="section-subtitle">apa iyah lu lakuin semua itu?</p>
-            <h6 class="section-title mb-6">mungkin</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/hasil 1.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, dixy Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>GFX</h5>
-                                <p class="font-weight-normal">Category: poster/edit</p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/Hasil 2.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, dixy Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Editing</h5>
-                                <p class="font-weight-normal">Category: ngedit</p>
-                            </span>                         
+<!-- portfolio section -->
+<section class="section" id="portfolio">
+    <div class="container text-center">
+        <p class="section-subtitle">apa iyah lu lakuin semua itu?</p>
+        <h6 class="section-title mb-6">mungkin</h6>
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#" class="portfolio-card">
+                    <img src="assets/imgs/hasil 1.jpg" class="portfolio-card-img" >    
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4>GFX</h5>
+                            <p class="font-weight-normal">Category: poster/edit</p>
                         </span>                         
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/hsl3.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, dixy Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>poster</h5>
-                                <p class="font-weight-normal">Category: ngedit</p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section> <!-- end of portfolio section -->
+                    </span>                     
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="portfolio-card">
+                    <img class="portfolio-card-img" src="assets/imgs/Hasil 2.jpg" class="img-responsive rounded" >
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4>Editing</h5>
+                            <p class="font-weight-normal">Category: ngedit</p>
+                        </span>                         
+                    </span>                         
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="portfolio-card">
+                    <img class="portfolio-card-img" src="assets/imgs/hsl3.jpg" class="img-responsive rounded" >    
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4>poster</h5>
+                            <p class="font-weight-normal">Category: ngedit</p>
+                        </span>                         
+                    </span>                     
+                </a>
+            </div>
+        </div><!-- end of row -->
+    </div><!-- end of container -->
+</section> <!-- end of portfolio section -->
 
-    <!-- pricing section -->
-    <!-- end of pricing section -->
+<!-- pricing section -->
+<!-- end of pricing section -->
 
-    <!-- section -->
-    <section class="section-sm bg-primary">
-        <!-- container -->
-        <div class="container text-center text-sm-left">
-            <!-- row -->
-            <div class="row align-items-center">
-                <div class="col-sm offset-md-1 mb-4 mb-md-0">
-                    <h6 class="title text-light">mau nanya nanya?</h6>
-                    <p class="m-0 text-light">gas langsung chat aku aja</p>
-                </div>
-                <div class="col-sm offset-sm-2 offset-md-3">
-                    <button class="btn btn-lg my-font btn-light rounded"><a href="wa.me/6285161528350">Chat aku</a></button>
-                </div>
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of section -->
+<!-- section -->
+<section class="section-sm bg-primary">
+    <!-- container -->
+    <div class="container text-center text-sm-left">
+        <!-- row -->
+        <div class="row align-items-center">
+            <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                <h6 class="title text-light">mau nanya nanya?</h6>
+                <p class="m-0 text-light">gas langsung chat aku aja</p>
+            </div>
+            <div class="col-sm offset-sm-2 offset-md-3">
+                <button class="btn btn-lg my-font btn-light rounded"><a href="wa.me/6285161528350">Chat aku</a></button>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section> <!-- end of section -->
 
-    <!-- testimonial section -->
-    <section class="section" id="testmonial">
-        <div class="container text-center">
-            <p class="section-subtitle">Review</p>
-            <h6 class="section-title mb-6">pendapat org tentang aku</h6>
+<!-- testimonial section -->
+<section class="section" id="testmonial">
+    <div class="container text-center">
+        <p class="section-subtitle">Review</p>
+        <h6 class="section-title mb-6">pendapat org tentang aku</h6>
 
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/ACEEEE.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, dixy Landing page">                           
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Adit tuh baik,penyayang,jago hyper,sepuh ML,keren  pokoknya GG lah (mines kadang kayak malaikat aja) btw top up di pointgo aja auto hoki.</p>
-                            <h6 class="testimonial-card-title">Elvin</h6>
-                        </div>
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="testimonial-card">
+                    <div class="testimonial-card-img-holder">
+                        <img src="assets/imgs/ACEEEE.jpg" class="testimonial-card-img" >                           
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/timiti.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, dixy Landing page">                        
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">-</p>
-                            <h6 class="testimonial-card-title">1-</h6>
-                        </div>
+                    <div class="testimonial-card-body">
+                        <p class="testimonial-card-subtitle">Adit tuh baik,penyayang,jago hyper,sepuh ML,keren  pokoknya GG lah (mines kadang kayak malaikat aja) btw top up di pointgo aja auto hoki.</p>
+                        <h6 class="testimonial-card-title">Elvin</h6>
                     </div>
                 </div>
             </div>
-        </div> <!-- end of container -->
-    </section> <!-- end of testimonial section -->
-    
-    <!-- blog section -->
-    <section class="section" id="blog">
-        <!-- container -->
-        <div class="container text-center">
-            <p class="section-subtitle">Rekomendasi</p>
-            <h6 class="section-title mb-6">youtube</h6>
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/ACEUNY.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, dixy Landing page">
+            <div class="col-md-6">
+                <div class="testimonial-card">
+                    <div class="testimonial-card-img-holder">
+                        <img src="assets/imgs/timiti.jpg" class="testimonial-card-img" >                        
+                    </div>
+                    <div class="testimonial-card-body">
+                        <p class="testimonial-card-subtitle">-</p>
+                        <h6 class="testimonial-card-title">1-</h6>
+                    </div>
                 </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Leak/hal yg bakal dateng ke ML</h6>
-
-                    <p class="blog-card-caption">
-                        <a href="#">By:Ace unyil</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> ?</a>
-                        <a href="#"><i class="ti-comment"></i> ?</a>
-                    </p>
-                    <p>Hello everyone, introduce me I am Aceunyil </p>
-                    <p><b> I am from Indonesia
-                        on this channel I will share information about game updates! so for those of you who like game information content, don't forget to subscribe so you don't miss information from the game to your loved ones ok!
-                        thank you so much for all of your support</b></p>
-                    <p></p>
-
-                    <a href="https://www.youtube.com/@aceunyil" class="blog-card-link">Tap here <i class="ti-angle-double-right"></i></a>
-                </div>
-            </div><!-- end of blog wrapper -->
-
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/hertot.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, dixy Landing page">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">tips jago hero/mikro makro ML </h6>
-
-                    <p class="blog-card-caption">
-                        <a href="https://youtube.com/@heroisgod1">By: Hertod</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> ?</a>
-                        <a href="#"><i class="ti-comment"></i> ?</a>
-                    </p>
-                    
-                    <p>HEROISGOD adalah pengangguran yang bikin video gajelas</p>
-
-                    <a href="https://youtube.com/@heroisgod1" class="blog-card-link">tap here<i class="ti-angle-double-right"></i></a>
-                </div>
-            </div><!-- I need more bullet!!! --> </i>
-
-        </div><!-- big wepong!!!-->
-    </section><!-- end of blog section -->
-    <!-- footer -->
-    <div class="container">
-        <footer class="footer">       
-            <p class="mb-0">Thank you all</script> &copy; <a href="https://www.instagram.com/dittyyy_8/">Dixy</a></p>
-            <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="https://www.instagram.com/dittyyy_8/" class="link"><i class="ti-instagram"></i></a>
-                <a href="https://open.spotify.com/playlist/5lifjZ1XwliUDewSKWXzn8?si=pC-uMac2RKaa5uk2mUW6jw&utm_source=copy-link&nd=1" class="link"><i class="ti-music"></i></a>
             </div>
-        </footer>
-    </div> <!-- end of page footer -->
-	
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+        </div>
+    </div> <!-- end of container -->
+</section> <!-- end of testimonial section -->
 
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+<!-- blog section -->
+<section class="section" id="blog">
+    <!-- container -->
+    <div class="container text-center">
+        <p class="section-subtitle">Rekomendasi</p>
+        <h6 class="section-title mb-6">youtube</h6>
+        <!-- blog-wrapper -->
+        <div class="blog-card">
+            <div class="blog-card-header">
+                <img src="assets/imgs/ACEUNY.jpg" class="blog-card-img" >
+            </div>
+            <div class="blog-card-body">
+                <h5 class="blog-card-title">Leak/hal yg bakal dateng ke ML</h6>
 
-    <!-- dixy js -->
-    <script src="assets/js/dixy.js"></script>
+                <p class="blog-card-caption">
+                    <a href="#">By:Ace unyil</a>
+                    <a href="#"><i class="ti-heart text-danger"></i> ?</a>
+                    <a href="#"><i class="ti-comment"></i> ?</a>
+                </p>
+                <p>Hello everyone, introduce me I am Aceunyil </p>
+                <p><b> I am from Indonesia
+                    on this channel I will share information about game updates! so for those of you who like game information content, don't forget to subscribe so you don't miss information from the game to your loved ones ok!
+                    thank you so much for all of your support</b></p>
+                <p></p>
 
-    <script>
-    function toggleAudio() {
-    var audio = document.getElementById("myAudio");
-    var playButton = document.getElementById("playButton");
+                <a href="https://www.youtube.com/@aceunyil" class="blog-card-link">Tap here <i class="ti-angle-double-right"></i></a>
+            </div>
+        </div><!-- end of blog wrapper -->
 
-    if (audio.paused) {
-        audio.play();
-        playButton.innerHTML = "<span class='play-icon'>■</span> Pause";
-    } else {
-        audio.pause();
-        playButton.innerHTML = "<span class='play-icon'>▶</span> Play songs";
-    }
+        <!-- blog-wrapper -->
+        <div class="blog-card">
+            <div class="blog-card-header">
+                <img src="assets/imgs/hertot.jpg" class="blog-card-img" >
+            </div>
+            <div class="blog-card-body">
+                <h5 class="blog-card-title">tips jago hero/mikro makro ML </h6>
 
-    audio.addEventListener('play', function() {
-        playButton.innerHTML = "<span class='play-icon'>■</span> Pause";
-    });
+                <p class="blog-card-caption">
+                    <a href="https://youtube.com/@heroisgod1">By: Hertod</a>
+                    <a href="#"><i class="ti-heart text-danger"></i> ?</a>
+                    <a href="#"><i class="ti-comment"></i> ?</a>
+                </p>
+                
+                <p>HEROISGOD adalah pengangguran yang bikin video gajelas</p>
 
-    audio.addEventListener('pause', function() {
-        playButton.innerHTML = "<span class='play-icon'>▶</span> Play songs";
-    });
+                <a href="https://youtube.com/@heroisgod1" class="blog-card-link">tap here<i class="ti-angle-double-right"></i></a>
+            </div>
+        </div><!-- I need more bullet!!! --> </i>
+
+    </div><!-- big wepong!!!-->
+</section><!-- end of blog section -->
+<!-- footer -->
+<div class="container">
+    <footer class="footer">       
+        <p class="mb-0">Thank you all</script> &copy; <a href="https://www.instagram.com/dittyyy_8/">Dixy</a></p>
+        <div class="social-links text-right m-auto ml-sm-auto">
+            <a href="https://www.instagram.com/dittyyy_8/" class="link"><i class="ti-instagram"></i></a>
+            <a href="https://open.spotify.com/playlist/5lifjZ1XwliUDewSKWXzn8?si=pC-uMac2RKaa5uk2mUW6jw&utm_source=copy-link&nd=1" class="link"><i class="ti-music"></i></a>
+        </div>
+    </footer>
+</div> <!-- end of page footer -->
+
+<!-- core  -->
+<script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+<script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+<!-- bootstrap 3 affix -->
+<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+<!-- dixy js -->
+<script src="assets/js/dixy.js"></script>
+
+<script>
+function toggleAudio() {
+var audio = document.getElementById("myAudio");
+var playButton = document.getElementById("playButton");
+
+if (audio.paused) {
+    audio.play();
+    playButton.innerHTML = "<span class='play-icon'>■</span> Pause";
+} else {
+    audio.pause();
+    playButton.innerHTML = "<span class='play-icon'>▶</span> Play songs";
 }
-    </script>
+
+audio.addEventListener('play', function() {
+    playButton.innerHTML = "<span class='play-icon'>■</span> Pause";
+});
+
+audio.addEventListener('pause', function() {
+    playButton.innerHTML = "<span class='play-icon'>▶</span> Play songs";
+});
+}
+</script>
 </body>
 
 </html>
